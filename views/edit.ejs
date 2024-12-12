@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs") %>
+
+
+<div class="container create-post">
+    <div class="mb-3">
+        <form action="/posts/edit/<%= post.id %>" method="POST">
+        <label for="posttitle" class="form-label">Post title</label>
+        <input type="text" class="form-control" id="posttitle" name = "posttitle" value="<%= post.title %>" placeholder="My Post" required> 
+      </div>
+      <div class="mb-3">
+        <label for="postdesc" class="form-label">Description</label>
+        <textarea class="form-control" id="postdesc" name= "postdesc"rows="3" required><%= post.content %></textarea>
+      </div>
+      <!-- <div class="buttons">
+        <form action="/views" method="get">
+            <button type="submit" class="btn btn-danger btn-lg px-4 gap-3 ">Cancel</button>
+        </form>
+        <form action="/" method="delete">
+            <button type="submit" class="btn btn-outline-secondary btn-lg px-4 text-danger">Delete</button>
+        </form>
+    </div> -->
+          <input type="submit" name="save" class="p-2 bg-danger text-white  border-danger">
+    </form>
+</div>
+
+</body>
+</html>

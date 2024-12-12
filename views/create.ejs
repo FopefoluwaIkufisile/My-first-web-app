@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+
+
+<div class="container create-post">
+    <div class="mb-3">
+        <form action="/posts" method="POST">
+        <label for="posttitle" class="form-label">Post title</label>
+        <input type="text" class="form-control" id="posttitle" name = "posttitle"  placeholder="My Post">
+      </div>
+      <div class="mb-3">
+        <label for="post-desc" class="form-label">Description</label>
+        <textarea class="form-control" id="postdesc" name= "postdesc"rows="3"></textarea>
+      </div>
+      <input type="submit" name="submit" class="p-2">
+    </form>
+</div>
