@@ -1,2 +1,3 @@
 # My-first-web-app
-A Capstone Project for a web app that allows users to create, edit, view and delete post!!
+This is one of my capstone projects, Here I made a web application that allows the user to create, edit, view and delete blog posts.
+I made this using ejs, and nodejs , i used expressjs to create the server
